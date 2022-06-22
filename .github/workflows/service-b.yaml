@@ -1,7 +1,8 @@
 name: Test Action for Service B
 on:
-  paths:
-    - "service-b/**"
+  push:
+    paths:
+      - "service-b/**"
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
