@@ -1,12 +1,12 @@
-name: Test Action for Service B
+name: Test Action for {{NAME}}
 on:
   push:
     paths:
-      - "service-b/**"
+      - "{{NAME}}/**"
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
-      - run: echo "Run test for Service B"
+      - run: echo "Run test for ${{NAME}}"
       - run: echo "🍏 This job's status is ${{ job.status }}."
