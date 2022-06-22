@@ -1,4 +1,4 @@
-RUN_UNIT_TESTS_WORKFLOW_TEMPLATE=$(cat .github/workflows/run-unit-tests-template.yaml)
+RUN_UNIT_TESTS_WORKFLOW_TEMPLATE=$(cat .github/run-unit-tests-template.yaml)
 
 for NAME in $(ls apps); do
     echo "generating workflow for apps/${NAME}"
